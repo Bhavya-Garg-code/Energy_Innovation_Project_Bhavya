@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page dedicated to the website of Energy Innovation">
+  <title>Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy transition:0.5s linear;="no-referrer" />
+  <link rel='stylesheet' href='CommonCss.css'>
+  <style>
+    body{
+      background-color: black;
+      color:white
+    }
+   header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #info {
+      background-color: black;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .details {
+      width: 60%;
+    }
+
+    .details h3 {
+      margin-top: 0;
+      font-weight: bold;
+      position: relative;
+      left: 70px;
+      top: -25px;
+      font-size: 35px;
+    }
+
+    .details ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .details ul li {
+      margin-bottom: 10px;
+    }
+
+    #ctitle {
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+
+    }
+
+    #ctext {
+      font-size: 17px;
+      text-align: center;
+    }
+
+    .details1 {
+      font-size: 18px;
+    }
+
+    .card {
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+      transition: transform 0.4s ease-in-out;
+      background-color: rgb(25, 24, 24);
+      color:white;
+      padding:10px;
+      letter-spacing: 1px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      height: 200px;
+    }
+
+    .img {
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+    }
+
+    .img:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px 10px 10px #AF69EF;
+
+    }
+
+    .navbar-toggler {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" id='nav'>
+      <a class="navbar-brand" href="#" id="main">Energy Innovation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggle_btn"">
+      <span class=" navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html" id="projects">Projects</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="NewIdeas.html" id="new_ideas">New Ideas</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Conservation.html" id="innovation">Conservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Developer.html" id="developer">
+              Developer
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="icon"><i class="fa-solid fa-lightbulb"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <h1>Developer Section</h1>
+  </header>
+
+  <section id="info">
+    <div class="container">
+      <div class="profile">
+        <img src="images/dev_pic.jpg" alt="Developer's Profile Picture" class="img-fluid img">
+        <h2>Bhavya Garg</h2>
+      </div>
+
+      <div class="details">
+        <h3>Know Me</h3>
+        <div class="card" style="width:18rem;">
+          <img src="images/detailsImage.jpg" class="card-img-top" alt="Details">
+          <div class="card-body">
+            <div class="card-title" id="ctitle">Details</div>
+            <div class="card-text" id="ctext">
+              <p class="details1">Name: Bhavya Garg</p>
+              <p class="details1">Age: 14 </p>
+              <p class="details1">Class: 9<sup>th</sup></p>
+              <p class="details1">Programming Languages used: HTML , CSS, JS, FrameWork(Bootstrap)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      let trail = document.createElement('div');
+      trail.classList.add('trail');
+      document.body.appendChild(trail);
+      trail.style.left = e.pageX + 'px';
+      trail.style.top = e.pageY + 'px';
+      setTimeout(() => {
+        trail.remove()
+      }, 500)
+    })
+  </script>
+</body>
+
+</html>

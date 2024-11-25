@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page dedicated to the website of Energy Innovation">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy transition:0.5s linear;="no-referrer" />
+  <link rel='stylesheet' href='CommonCss.css'>
+  <style>
+    .jumbo {
+      height: 500px;
+      background: url(Images/sustain1.jpeg);
+      background-size: cover;
+      opacity: 1;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 0;
+    }
+
+    #energy {
+      color: white;
+      font-weight: bold;
+    }
+
+    .cont1 {
+      transition: 0.7s linear;
+      background-color: green;
+      height: 50px;
+      width: 400px;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+    }
+
+    .cont1:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(10px 10px 10px white);
+    }
+
+    .cont2 {
+      transition: 0.6s linear;
+      background-color: rgb(218, 73, 124);
+      height: 65px;
+      width: 1050px;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+      margin-left: 200px;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+
+    .cont2:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(10px 10px 10px white);
+    }
+
+    #energy2 {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .cont3 {
+      transition: 0.7s linear;
+      background-color: green;
+      height: 50px;
+      width: 400px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      margin-left: 500px;
+      text-align: center;
+      padding: 10px;
+
+    }
+
+    .cont3:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(10px 10px 10px white);
+    }
+
+    .card {
+      cursor: pointer;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #212121;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      box-shadow: 0 0 0 5px #ffffff80;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      margin-left: 80px;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .card svg {
+      width: 48px;
+      fill: white;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(10px 10px 10px #007bff);
+    }
+
+    .card_content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      transform: rotateX(-90deg);
+      transform-origin: bottom;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      background-color: #007bff;
+      color: white;
+    }
+
+    .card:hover .card_content {
+      transform: rotateX(0deg);
+    }
+
+    .car:hover {
+      filter: drop-shadow(10px 10px 10px #df4e4e);
+    }
+
+    .car2 {
+      background-color: #df4e4e;
+    }
+
+    .card_title {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .card:hover svg {
+      scale: 0;
+    }
+
+    .card_description {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .row2 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cont4 {
+      transition: 0.7s linear;
+      background-color: green;
+      height: 50px;
+      width: 400px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      margin-left: 500px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .cont4:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(10px 10px 10px white);
+    }
+
+    .card3 {
+      margin-left: 40px;
+      border-radius: 10px;
+      height: 550px;
+      width: 300px;
+      background-color: #07182E;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      place-content: center;
+      place-items: center;
+      color: white;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.5s linear;
+      cursor: pointer;
+      margin-bottom: 50px;
+    }
+
+    .card3 h3 {
+      z-index: 1;
+
+    }
+
+    .card3 ul {
+      z-index: 1;
+    }
+
+    .card3 ul li {
+      margin-top: 30px;
+    }
+
+    .card3::before {
+      content: '';
+      position: absolute;
+      height: 130%;
+      width: 200px;
+      background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+      animation: rotate 3s linear infinite;
+      transition: all 1s linear;
+      overflow: hidden;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .card3::after {
+      content: '';
+      position: absolute;
+      background: #07182E;
+      inset: 5px;
+      border-radius: 15px;
+    }
+
+    .card3:hover {
+      filter: drop-shadow(8px 8px 8px #f4f4f4);
+      transform: scale(1.02);
+    }
+
+    .card3 img {
+      height: 150px;
+      width: 270px;
+      border-radius: 10px;
+      z-index: 1;
+      margin-bottom: 20px;
+      transition: all 0.5s linear;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+    }
+
+    .footer {
+      background-color: #272525;
+      height: 100px;
+    }
+
+    .h3 {
+      color: white;
+      margin-left: 20px;
+      margin-top: 40px;
+    }
+
+    .icons i {
+      font-size: 23px;
+      width: 60px;
+      padding: 20px;
+    }
+
+    .details {
+      color: white;
+      margin-left: 500px;
+      font-size: 20px;
+      margin-bottom: 70px;
+    }
+
+    .button {
+      height: 50px;
+      width: 120px;
+      background-color: #007bff;
+      color: white;
+      z-index: 1;
+      border: none;
+      border-radius: 10px;
+      transition: all 1s linear;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(10px 10px 10px blue);
+    }
+
+    .button2 {
+      height: 50px;
+      width: 120px;
+      background-color: #4caF50;
+      color: white;
+      z-index: 1;
+      border: none;
+      border-radius: 10px;
+      transition: all 1s linear;
+      margin-bottom: 20px;
+    }
+
+    .button2:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(10px 10px 10px green);
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" id='nav'>
+      <a class="navbar-brand" href="#" id="main">Energy Innovation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggle_btn"">
+      <span class=" navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html" id="projects">Projects</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="NewIdeas.html" id="new_ideas">New Ideas</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Conservation.html" id="innovation">Conservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Developer.html" id="developer">
+              Developer
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="icon"><i class="fa-solid fa-lightbulb"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Main Image -->
+  <div class="jumbo img-fluid">
+  </div>
+  <div class="container cont1">
+    <h2 id='energy'>Energy</h2>
+  </div>
+  <div class="cont2">
+    <p>Energy is the capacity to perform work, driving physical processes and changes in systems. It can neither be
+      created nor destroyed, only transformed, and is fundamental to all forms of activity and existence.</p>
+  </div>
+  <div class='cont3'>
+    <h2 id='energy2'>
+      Why is Energy Important?
+    </h2>
+  </div>
+  <!-- Cards -->
+  <div class='row'>
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+        </path>
+        <h2>Hover Me! </h2>
+      </svg>
+      <div class="card_content">
+        <p class="card_title">Quality of Life</p>
+        <p class="card_description">
+        <ul>
+          <li>Energy powers homes, providing heating, cooling, lighting, and the operation of appliances.</li>
+          <li>It is essential for cooking, preserving food, and ensuring clean water supply.
+          </li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+        </path>
+        <h2>Hover Me! </h2>
+      </svg>
+      <div class="card_content">
+        <p class="card_title">Economic Development</p>
+        <p class="card_description">
+        <ul>
+          <li>Industries and businesses rely on energy for production, transportation</li>
+          <li>Economic activities, from small businesses to large-scale manufacturing.
+          </li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+        </path>
+        <h2>Hover Me! </h2>
+      </svg>
+      <div class="card_content">
+        <p class="card_title">Transportation</p>
+        <p class="card_description">
+        <ul>
+          <li>Energy fuels vehicles, trains, planes, and ships, enabling the movement of goods and people.</li>
+          <li>Efficient transportation systems are vital for commerce and personal mobility.
+          </li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class='row2'>
+    <div class="card  car">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+        </path>
+        <h2>Hover Me! </h2>
+      </svg>
+      <div class="card_content car2">
+        <p class="card_title">Technology and Innovation</p>
+        <p class="card_description">
+        <ul>
+          <li>Energy drives technological advancements and supports research and development.</li>
+          <li>Innovations in energy technologies can lead to more efficient and sustainable energy use.
+          </li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div class="card car">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+        </path>
+        <h2>Hover Me! </h2>
+      </svg>
+      <div class="card_content car2">
+        <p class="card_title">
+          Healthcare</p>
+        <p class="card_description">
+        <ul>
+          <li>Hospitals need energy for lighting, heating, air conditioning, and operating medical equipment.</li>
+          <li>Reliable energy is essential for storing medicines and vaccines, and for conducting medical procedures.
+          </li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class='cont4'>
+    <h2 id='energy2'>Why To save energy?</h2>
+  </div>
+  <!-- Cards -->
+  <div class='row2'>
+    <div class='card3'>
+      <img src="Images/environmentPro.jpg" alt='environment' class='img-fluid'>
+      <h3>Environmental Protection:</h3>
+      <ul>
+        <li>Reduces carbon footprint and greenhouse gas emissions.</li>
+        <li>Decreases pollution and helps mitigate climate change.</li>
+      </ul>
+      <button class='button' id='enben'>Learn More</button>
+    </div>
+    <div class='card3'>
+      <img src="Images/ecoben.png" alt='Economic Benefits' class='img-fluid'>
+      <h3>Economic Benefits:</h3>
+      <ul>
+        <li>Using less energy reduces monthly utility costs.</li>
+        <li>Saving energy diminishes the need for importing expensive foreign oil and gas.</li>
+      </ul>
+      <button class='button2' id='ecoben'>Learn More</button>
+    </div>
+    <div class='card3'>
+      <img src="Images/socialben.jpg" alt='Social Benefits' class='img-fluid'>
+      <h3>Social Benefits:</h3>
+      <ul>
+        <li>Reduced pollution from lower energy consumption leads to fewer health issues like asthma and respiratory
+          diseases.</li>
+        <li>Lower energy demand reduces dependence on foreign energy sources, enhancing national security.</li>
+      </ul>
+      <button class='button' id='socialben'>Learn More</button>
+    </div>
+    <div class='card3'>
+      <img src="Images/techadvan.jpeg" alt='Technological Advancements' class='img-fluid'>
+      <h3>Technological Advancement:</h3>
+      <ul>
+        <li>The demand for energy-efficient technologies drives innovation</li>
+        <li>Energy efficiency creates jobs in manufacturing, installation, and maintenance of efficient systems.</li>
+      </ul>
+      <button class='button2' id='technobtn'>Learn More</button>
+    </div>
+  </div>
+  <div class='footer'>
+    <div class='h3'>Follow Us : </div>
+    <div class="icons">
+      <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class='details'>
+      <p id='data'>&copy; Energy Innovations</p>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  let ecobtn = document.getElementById('ecoben');
+  ecobtn.addEventListener('click', () => {
+    window.location.href = 'https://en.wikipedia.org/wiki/Energy_economics';
+  })
+  let techbtn = document.getElementById('technobtn');
+  techbtn.addEventListener('click', () => {
+    window.location.href = 'https://en.wikipedia.org/wiki/Energy_development#Energy_technology';
+  })
+  let socialbtn = document.getElementById('socialben');
+  socialbtn.addEventListener('click', () => {
+    window.location.href = 'https://en.wikipedia.org/wiki/Renewable_energy#Society_and_culture';
+  })
+  let enbtn = document.getElementById('enben');
+  enbtn.addEventListener('click', () => {
+    window.location.href = 'https://en.wikipedia.org/wiki/Renewable_energy#Market_and_industry_trends';
+  })
+  document.addEventListener('mousemove', (e) => {
+    let trail = document.createElement('div');
+    trail.classList.add('trail');
+    document.body.appendChild(trail);
+    trail.style.left = e.pageX + 'px';
+    trail.style.top = e.pageY + 'px';
+    setTimeout(() => {
+      trail.remove();
+    }, 500)
+  })
+</script>
+
+</html>
